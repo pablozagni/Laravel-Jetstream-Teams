@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-app-layout>
     <x-authentication-card>
         <x-slot name="logo">
             <x-authentication-card-logo />
@@ -30,16 +30,20 @@
                     href="{{ route('profile.show') }}"
                     class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                    {{ __('Edit Profile') }}</a>
-
+                    <x-button class="ml-2">
+                        {{ __('Edit Profile') }}
+                    </x-button>
+                </a>
+            </div>
+            <div>
                 <form method="POST" action="{{ route('logout') }}" class="inline">
                     @csrf
 
-                    <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ms-2">
+                    <x-button type="submit" class="ml-2">
                         {{ __('Log Out') }}
-                    </button>
+                    </x-button>
                 </form>
             </div>
         </div>
     </x-authentication-card>
-</x-guest-layout>
+</x-app-layout>

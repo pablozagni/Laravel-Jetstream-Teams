@@ -21,4 +21,14 @@
     <li>Ready</li>
 </ul>
 
+<h2>Commit 1 - Standard views</h2>
+<ul>
+    <li>.env example</li>
+    <li>PagesController created.</li>
+    <li>All views has x-app-layout as parent, so all views has menu visible.</li>
+    <li>Sample guest routes: Home / Contact.</li>
+    <li>Registered AND VERIFIED user can access Dashboard an Team configuration.</li>
+    <li></li>
+</ul>
+<p></p>
 <p>Code by Pablo Zagni - <a href="https://www.z-system.com.ar">www.z-system.com.ar</a></p>
